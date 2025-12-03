@@ -21,8 +21,6 @@ app.use('/api/v1/products', proudctsRouter);
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
 app.use(express.json());
-app.use(express.urlencoded());
-
 
 const port = process.env.PORT || 3000;
 const start = async ()=>{
